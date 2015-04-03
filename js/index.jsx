@@ -41,6 +41,11 @@ var thesisPhotosDivStyle = {
   order: '3'
 };
 
+var abstractStyle = {
+  order: '4',
+  textAlign: 'center',
+  fontSize: '20px',
+};
 
 var getResearchProfileImageStyle = function(w) {
   return function(position) {
@@ -61,6 +66,16 @@ React.render(
         <img src='http://goo.gl/ALBp65' style={getImageStyle(3)} />
         <img src='http://goo.gl/ALBp65' style={getImageStyle(4)} />
       </div>
+      <hr />
+      <div style={abstractStyle}>Abstract</div>
+      <p style={{order: '5', fontSize: '16px', margin: '16px'}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <div style={{order: '6'}}>
+        <a style={{textDecoration: 'none', fontSize: '16px', marginLeft: '16px'}} href='#'>Acadumia Link</a> 
+      </div>
+      <div style={{order: '7'}}>
+        <a style={{textDecoration: 'none', fontSize: '16px', marginLeft: '16px'}} href='#'>Shine on you crazy Diamond</a> 
+      </div>
+
 
     </Paper>
   </div>,
